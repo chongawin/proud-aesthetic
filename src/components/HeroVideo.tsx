@@ -94,6 +94,12 @@ export default function HeroVideo() {
       >
         <UserIcon />
       </button>
+      
+    <button
+       className="absolute bottom-6 left-1/2 flex h-10 -translate-x-1/2 items-center justify-center rounded-full bg-black/30 px-5 text-xs tracking-wide text-white backdrop-blur-sm"
+    >
+       {t("fullVideo")}
+     </button>
 
       <button
         onClick={toggleSound}
