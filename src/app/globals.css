@@ -8,3 +8,34 @@
   --color-sand: #c9b99a;
   --color-charcoal: #2b2b2b;
 }
+
+.before-after-range {
+  appearance: none;
+  background: transparent;
+}
+
+.before-after-range::-webkit-slider-runnable-track,
+.before-after-range::-webkit-slider-thumb,
+.before-after-range::-moz-range-track,
+.before-after-range::-moz-range-thumb {
+  background: transparent;
+  border: 0;
+}
+
+.before-after-range::-webkit-slider-thumb {
+  width: 2rem;
+  height: 100%;
+  -webkit-appearance: none;
+}
+
+.before-after-range::-moz-range-thumb {
+  width: 2rem;
+  height: 100%;
+}
+
+.hero-video::-webkit-media-controls,
+.hero-video::-webkit-media-controls-start-playback-button,
+.hero-video::-webkit-media-controls-overlay-play-button {
+  display: none !important;
+  -webkit-appearance: none;
+}

@@ -1,14 +1,15 @@
 import HeroVideo from "@/components/HeroVideo";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import VeneersSection from "@/components/VeneersSection";
+import { setRequestLocale } from "next-intl/server";
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("Hero");
 
   return (
-    <main className="min-h-screen bg-lavender p-6 text-ink">
+    <main className="min-h-screen bg-lavender text-ink">
       <HeroVideo />
+      <VeneersSection />
     </main>
   );
 }
